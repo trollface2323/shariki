@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
 
     <title>ello, world!</title>
@@ -18,7 +18,7 @@
     <div class="container">
         <div class="header">
 
-            <span class="nav r">картинка c  </span>
+            <span class="nav r">картинка c </span>
 
             <!--       первая строка после картинки с шариками -->
             <div class="row top" style="font-size:13px">
@@ -88,7 +88,7 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <img class="bg-cover" src="https://v1.popcornnews.ru/k2/news/970/upload/news/637056676986.jpg" alt="" style="width:540px; height:335px">
+                    <img class="bg-cover" src="photos/car2.png" alt="" style="width:540px; height:335px">
                 </div>
             </div>
 
@@ -97,30 +97,46 @@
 
         <!--     блок с иконками -->
         <!--     TODO: отцентровать-->
-        <div class="baloons r">
-            <span>ШАРЫ</span>
-            <div class="row" style="margin-top:32px">
-                <div class="col">КОМПОЗИЦИИ НА ДЕНЬ РОЖДЕНИЯ</div>
+        <div class="baloons r" style="width: 880px">
+            <span style="font-size: 24px">ШАРЫ</span>
+            <div class="row align-items-center" style="margin-top:32px; font-size: 10px;">
+                <div class="col-auto"><img src="photos/1.png" alt="icon"></div>
+                <div class="col" style="width: 156px">КОМПОЗИЦИИ<br> НА ДЕНЬ РОЖДЕНИЯ</div>
+                <div class="col-auto"><img src="photos/2.png" alt="icon"></div>
                 <div class="col">ШАРЫ ЦИФРЫ</div>
+                <div class="col-auto"><img src="photos/3.png" alt="icon"></div>
                 <div class="col">ФОЛЬГИРОВАННЫЕ ШАРЫ(С РИСУНКОМ)</div>
+                <div class="col-auto"><img src="photos/4.png" alt="icon"></div>
                 <div class="col">С РИСУНКОМ</div>
             </div>
-            <div class="row" style="margin-top:12px">
-                <div class="col"><img src="1.png" alt="">КОМПОЗИЦИИ ИЗ ШАРОВ</div>
+            <div class="row align-items-center" style="margin-top:12px; font-size: 10px">
+                <div class="col-auto"><img src="photos/5.png" alt="icon"></div>
+                <div class="col">КОМПОЗИЦИИ ИЗ ШАРОВ</div>
+                <div class="col-auto"><img src="photos/6.png" alt="icon"></div>
                 <div class="col">ДЛЯ ВЫПИСКИ ИЗ РОДДОМА</div>
+                <div class="col-auto"><img src="photos/7.png" alt="icon"></div>
                 <div class="col">ФОЛЬГИРОВАННЫЕ ШАРЫ(ФИГУРНЫЕ)</div>
+                <div class="col-auto"><img src="photos/8.png" alt="icon"></div>
                 <div class="col">ОФОРМЛЕНИЕ ВОЗДУШНЫМИ ШАРАМИ</div>
             </div>
-            <div class="row" style="margin-top:12px">
+            <div class="row align-items-center" style="margin-top:12px; font-size: 10px">
+                <div class="col-auto"><img src="photos/9.png" alt="icon"></div>
                 <div class="col">БЕЗ РИСУНКА</div>
+                <div class="col-auto"><img src="photos/10.png" alt="icon"></div>
                 <div class="col">ОФОРМЛЕНИЕ МАГАЗИНОВ ВОЗДУШНЫМИ ШАРАМИ</div>
+                <div class="col-auto"><img src="photos/11.png" alt="icon"></div>
                 <div class="col">ХОДЯЧИЕ ФИГУРЫ</div>
+                <div class="col-auto"><img src="photos/12.png" alt="icon"></div>
                 <div class="col">ЛАТЕКСНЫЕ ШАРЫ(СЕРДЦА)</div>
             </div>
-            <div class="row" style="margin-top:12px">
-                <div class="col-3">ЦВЕТЫ И ФИГУРЫ</div>
-                <div class="col-3">ФОЛЬГИРОВАННЫЕ ШАРЫ(БЕЗ РИСУНКА)</div>
-                <div class="col-3">СВЕТЯЩИЕСЯ</div>
+            <div class="row align-items-center" style="margin-top:12px; font-size: 10px">
+                <div class="col-auto"><img src="photos/7.png" alt=""></div>
+                <div class="col-1 r" style="width: 156px">ЦВЕТЫ И ФИГУРЫ</div>
+                <div class="col-auto"><img src="photos/3.png" alt=""></div>
+                <div class="col">ФОЛЬГИРОВАННЫЕ ШАРЫ(БЕЗ РИСУНКА)</div>
+                <div class="col-auto"><img src="photos/9.png" alt=""></div>
+                <div class="col">СВЕТЯЩИЕСЯ</div>
+<!--                plate:nth-of-type(even)-->
 
             </div>
         </div><!--Закрывается baloons -->
@@ -138,6 +154,7 @@
 </html>
 
 <style>
+
     .nav{
     // position: absolute;
     // left: 405px;
@@ -180,6 +197,9 @@
         background-color: #F4F6FC;
         font-weight: bold;
         font-size: 10px;
+        width: 880px;
+        margin: auto;
+        /*padding;*/
     }
     .header{
         color: #17ACE3;
@@ -187,6 +207,7 @@
     }
     .body{
         font-family: 'Lato', sans-serif;
+        z-index: 10;
     }
     .bg-cover {
         background-repeat: no-repeat;
@@ -194,6 +215,7 @@
         background-position: center 35%;
         background-color: #ecf1f5;
         position: relative;
+
     }
 
 </style>
